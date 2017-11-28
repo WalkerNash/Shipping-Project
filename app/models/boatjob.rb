@@ -1,2 +1,3 @@
 class Boatjob < ApplicationRecord
+  
 end
