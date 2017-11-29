@@ -1,3 +1,0 @@
-class Boatjob < ApplicationRecord
-  
-end
