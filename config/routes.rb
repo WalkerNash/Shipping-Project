@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 resources :ships
 resources :jobs
 resources :ship_jobs
-resources :users
+# resources :users
 
   devise_for :users
 
