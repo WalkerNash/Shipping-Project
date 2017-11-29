@@ -19,9 +19,15 @@
 body {
   background-color: grey;
   color: black;
-
+  font-family: monospace;
+  font-size: 18px;
 }
 
 #loginIn {
-  align-items: center;
+  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
 }
