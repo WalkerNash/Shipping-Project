@@ -18,7 +18,7 @@
     	<% if user_signed_in? %>
         <%=link_to 'Jobs', jobs_path %>
   	    <%=link_to 'Ships', ships_path %>
-		    <%= link_to 'Profile', root_path %>
+		    <%= link_to 'Profile', ship_jobs_path %>
   	  	<%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm: 'are you sure??'} %>
     	<% end %>
     </nav>
