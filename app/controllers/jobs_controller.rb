@@ -3,6 +3,7 @@ before_action :authenticate_user!
 
   def index
     @jobs = Job.all
+    @ships = Ship.all
   end
 
   def show
