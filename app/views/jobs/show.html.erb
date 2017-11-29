@@ -1,14 +1,20 @@
-<h1>JobName</h1>
+<h1>Jobs#show</h1>
+<% @job.each do |job| %>
 
+  <h3>Job title: </h3>
+  <p>
+    <%= job.title %>
+  </p>
+  <h3>Job Descrtiption</h3>
+  <p>
+    <%= job.description %>
+  </p>
 
-<p>Description - render</p>
-
-<p>Origin - render</p>
-
-<p>Destination - render</p>
-
-<p>Cost - render</p>
-
-<p>Containers - render</p>
-
+  <p><%= link_to 'Add', root_path %></p>
+  <p><%= link_to 'Edit', edit_job_path(job) %></p>
+  <p>
+  <%= link_to 'Destroy Job', job,
+               method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+<% end %>
 
