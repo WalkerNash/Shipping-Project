@@ -4,5 +4,28 @@
 
 
 body {
+  color: white;
+
+  background-image: url('shippingdock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.title {
+  font-size: 20px;
   background-color: grey;
+  text-align: center;
+}
+
+
+.login {
+  text-align: center;
+
+}
+
+.actions {
+  border: grey;
 }
