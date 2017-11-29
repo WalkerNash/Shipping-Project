@@ -1,0 +1,2 @@
+module ShipJobsHelper
+end

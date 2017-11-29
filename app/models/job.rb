@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-  belongs_to :ship
+  has_and_belongs_to_many :ships
   validates :name, uniqueness: true
   validates :cost, length: { > 1000 }
   validates :description, length: { > 20 }
