@@ -6,6 +6,7 @@ class CreateShips < ActiveRecord::Migration[5.1]
       t.string :location
       t.references :job, foreign_key: true
       t.references :ship, foreign_key: true
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end
