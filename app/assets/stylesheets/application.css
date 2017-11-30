@@ -36,10 +36,10 @@
 
 
   body {
-    color: grey;
+    color: white;
     font-family: monospace;
     font-size: 25px;
-    background-image: url('dock.jpg');
+    background-image: url('ship.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -97,4 +97,8 @@
   .nav {
     color: white;
     text-decoration: none;
+  }
+
+  a {
+
   }
