@@ -14,6 +14,7 @@
  *= require_self
  */
 
+<<<<<<< HEAD
  /* .......... Sign Up Page CSS ......... */
 
  /* .......... Sign In Page CSS ......... */
@@ -36,3 +37,23 @@
   .hidden {
     display: none;
   }
+=======
+
+
+
+body {
+  background-color: grey;
+  color: black;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+#login {
+  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+}
+>>>>>>> 42556153e28767ccd240ff4d71ccbdca52728001
