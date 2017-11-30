@@ -1,14 +1,30 @@
+<div class="jobShow">
+
 <h1>JobName</h1>
 
+<div class="jobField">
+  <h3>Title</h3>
+  <p><%= @job.title %></p>
+</div>
 
-<p>Description - render</p>
+<div class="jobField">
+  <h3>Description</h3>
+  <p><%= @job.description %></p>
+</div>
 
-<p>Origin - render</p>
+<div class="jobField">
+  <h3>Origin</h3> <p><%= @job.origin %></p>
+</div>
 
-<p>Destination - render</p>
+<div class="jobField">
+<h3>Destination</h3> <p><%= @job.destination %></p>
+</div>
 
-<p>Cost - render</p>
+<div class="jobField">
+<h3>Cost</h3> <p>$<%= @job.cost %></p>
+</div>
 
-<p>Containers - render</p>
-
-
+<div class="jobField">
+<h3>Containers</h3> <p><%= @job.containers %></p>
+</div>
+</div>

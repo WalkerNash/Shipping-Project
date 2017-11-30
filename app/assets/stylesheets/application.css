@@ -14,6 +14,30 @@
  *= require_self
  */
 
+<<<<<<< HEAD
+ /* .......... Sign Up Page CSS ......... */
+
+ /* .......... Sign In Page CSS ......... */
+ #signin {
+   background-color: blue; 
+ }
+
+ /* .......... Home Page CSS ......... */
+
+ /* .......... Jobs Page CSS ......... */
+
+ /* .......... Ships Page CSS ......... */
+
+ /* .......... Profile Page CSS ......... */
+
+ /* .......... Jobs Page CSS ......... */
+
+  /* .......... hidden Classname CSS ......... */
+
+  .hidden {
+    display: none;
+  }
+=======
 
 
 
@@ -32,3 +56,4 @@ body {
     text-align: center;
 
 }
+>>>>>>> 42556153e28767ccd240ff4d71ccbdca52728001
