@@ -15,12 +15,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> new-stuff-to-seeds-n-job-page-
  /* .......... Sign Up Page CSS ......... */
 
  /* .......... Sign In Page CSS ......... */
- #signin {
-   background-color: blue; 
- }
+ /*#signin {
+   background-color: blue;
+ }*/
 
  /* .......... Home Page CSS ......... */
 
@@ -37,6 +40,7 @@
   .hidden {
     display: none;
   }
+<<<<<<< HEAD
 =======
 
 =======
@@ -129,3 +133,5 @@ padding-top: 30px;
   text-decoration: none;
 }
 >>>>>>> 42556153e28767ccd240ff4d71ccbdca52728001
+=======
+>>>>>>> new-stuff-to-seeds-n-job-page-
