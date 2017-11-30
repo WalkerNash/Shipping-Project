@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class ShipsController < ApplicationController
   before_action :authenticate_user!
 
@@ -54,7 +53,7 @@ end
     params.require(:ship).permit(:name, :containers, :location, :job_id)
   end
 end
-=======
+
 class ShipsController < ApplicationController
   before_action :authenticate_user!
 
@@ -110,4 +109,3 @@ end
     params.require(:ship).permit(:name, :containers, :location, :job_id)
   end
 end
->>>>>>> bbd9fcdf7e2712eb94dd4c108da0513dbd439936
