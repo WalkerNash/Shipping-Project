@@ -57,17 +57,30 @@ body {
 
 .container {
   font-size: 13px;
-  border: 2px solid red;
-  height: 150px;
+  height: 190px;
   width: 30%;
   float: left;
   display: flex;
+  border-radius: 25px;
   padding-top: 80px;
   margin-top: 500px;
   margin-left: 30px;
-  background-color: grey;
 }
 
+.p {
+  padding-top: 50px;
+  color: white;
+  font-weight: bold;
+  background-color: grey;
+  border-radius: 25px;
+  text-indent: 2em;
+
+}
+
+.h2 {
+  text-align: center;
+
+}
 .nav {
   color: white;
   text-decoration: none;
