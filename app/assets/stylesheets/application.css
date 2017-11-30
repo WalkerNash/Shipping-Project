@@ -14,3 +14,47 @@
  *= require_tree .
 
  */
+/*body {
+  font-size: 25px;
+  color: white;
+  font-family: monospace;
+}*/
+
+
+/*LOGIN PAGE */
+body {
+  color: white;
+  font-family: monospace;
+  font-size: 25px;
+  background-image: url('shippingdock.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.login {
+  text-align: center;
+
+}
+
+.actions {
+  border: grey;
+}
+
+/*WELCOME PAGE */
+
+.shipyard {
+  text-align: center;
+}
+
+.welcome {
+  text-align: center;
+}
