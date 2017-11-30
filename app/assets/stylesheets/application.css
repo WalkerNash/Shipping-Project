@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+ /* .......... Main CSS ......... */
  /* .......... Sign Up Page CSS ......... */
 
  /* .......... Sign In Page CSS ......... */
@@ -39,7 +39,7 @@
     color: grey;
     font-family: monospace;
     font-size: 25px;
-    background-image: url('shippingdock.jpg');
+    background-image: url('dock.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
