@@ -56,5 +56,15 @@ body {
 }
 
 .welcome {
+  text-shadow: 0px 2px 2px;
   text-align: center;
+}
+
+.ships {
+  border: 3px solid red;
+
+}
+
+.loremships {
+  font-size: 15px;
 }
