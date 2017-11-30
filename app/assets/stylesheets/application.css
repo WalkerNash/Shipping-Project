@@ -51,20 +51,36 @@ body {
 
 /*WELCOME PAGE */
 
-.shipyard {
-  text-align: center;
-}
 
 .welcome {
   text-shadow: 0px 2px 2px;
   text-align: center;
 }
 
-.ships {
-  border: 3px solid red;
-
+.container {
+  font-size: 13px;
+  border: 2px solid red;
+  height: 100px;
+  width: 150%;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.loremships {
-  font-size: 15px;
+.container2 {
+font-size: 13px;
+border: 2px solid red;
+height: 100px;
+width: 150%;
+display: block;
+text-align: left;
+}
+
+.container3 {
+font-size: 13px;
+border: 2px solid red;
+height: 100px;
+width: 150%;
+display: block;
+text-align: left;
 }
