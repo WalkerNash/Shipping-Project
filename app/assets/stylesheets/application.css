@@ -31,7 +31,6 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-
 }
 
 .title {
@@ -42,7 +41,6 @@ body {
 
 .login {
   text-align: center;
-
 }
 
 .actions {
@@ -60,40 +58,14 @@ body {
 .container {
   font-size: 13px;
   border: 2px solid red;
-  height: 100px;
-  width: 75%;
+  height: 150px;
+  width: 30%;
   float: left;
   display: flex;
-  padding-top: 30px;
-  margin-top: 30px;
-}
-
-.container2 {
-font-size: 13px;
-border: 2px solid red;
-height: 100px;
-width: 75%;
-display: inline-block;
-text-align: center;
-background-color: grey;
-display: flex;
-padding-top: 30px;
-margin-bottom: 30px;
-
-
-}
-
-.container3 {
-font-size: 13px;
-border: 2px solid red;
-height: 100px;
-width: 75%;
-float: left;
-margin-top: 30px;
-display: flex;
-padding-top: 30px;
-
-
+  padding-top: 80px;
+  margin-top: 500px;
+  margin-left: 30px;
+  background-color: grey;
 }
 
 .nav {
