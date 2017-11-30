@@ -1,0 +1,38 @@
+<%= form_with(model: ship, local: true) do |form| %>
+  <% if ship.errors.any? %>
+    <div id="error_explanation">
+      <p><%= pluralize(ship.errors.count, 'stuff') %> fucked you up:</p>
+      <ul>
+        <% job.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+<div class="text-field">
+  <%= form.label :name %>
+  <%= form.text_field :name, id: :ship_name %>
+</div>
+
+<div class="text-field">
+  <%= form.label :containers %>
+  <%= form.text_field :containers, id: :ship_containers %>
+</div>
+
+<div class="text-field">
+  <%= form.label :location %>
+  <%= form.text_field :location, id: :ship_location %>
+</div>
+
+<div class="photo-field">
+  <%= form_for @ship, url: ships_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :shippic %>
+</div>
+
+<div class='submit'>
+  <%= form.submit %>
+</div>
+<% end %>
