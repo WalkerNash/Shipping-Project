@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171128191553) do
+
+
+ActiveRecord::Schema.define(version: 20171130211137) do
+
+  create_table "job_ships", force: :cascade do |t|
+    t.integer "job_id"
+    t.integer "ship_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["job_id"], name: "index_job_ships_on_job_id"
+    t.index ["ship_id"], name: "index_job_ships_on_ship_id"
+    t.index ["user_id"], name: "index_job_ships_on_user_id"
+  end
 
   create_table "jobs", force: :cascade do |t|
     t.string "title"
@@ -19,30 +32,16 @@ ActiveRecord::Schema.define(version: 20171128191553) do
     t.string "destination"
     t.integer "cost"
     t.integer "containers"
-    t.integer "ship_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
-    t.index ["ship_id"], name: "index_jobs_on_ship_id"
   end
 
-  create_table "ship_jobs", force: :cascade do |t|
-    t.integer "job_id"
-    t.integer "ship_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["job_id"], name: "index_ship_jobs_on_job_id"
-    t.index ["ship_id"], name: "index_ship_jobs_on_ship_id"
-    t.index ["user_id"], name: "index_ship_jobs_on_user_id"
-  end
 
   create_table "ships", force: :cascade do |t|
     t.string "name"
     t.integer "containers"
     t.string "location"
-    t.integer "job_id"
-    t.integer "ship_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
