@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171201211745) do
-=======
-ActiveRecord::Schema.define(version: 20171130211137) do
->>>>>>> 8ca84719342755b63c330245faa053e17224fdd6
-
   create_table "job_ships", force: :cascade do |t|
     t.integer "job_id"
     t.integer "ship_id"
@@ -49,15 +44,12 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.integer "ship_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
+
     t.string "shippic_file_name"
     t.string "shippic_content_type"
     t.integer "shippic_file_size"
     t.datetime "shippic_updated_at"
-    t.integer "user_id"
-=======
->>>>>>> 8ca84719342755b63c330245faa053e17224fdd6
-    t.index ["job_id"], name: "index_ships_on_job_id"
+    t.integer "user_id"    t.index ["job_id"], name: "index_ships_on_job_id"
     t.index ["ship_id"], name: "index_ships_on_ship_id"
   end
 
