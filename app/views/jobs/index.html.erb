@@ -1,7 +1,7 @@
-<h1>Jobs List</h1>
-<%= link_to 'Create New Job', new_job_path %>
+<h1 class="jobslist">Jobs List</h1>
 
-
+<div class="createnewjob">
+  <%= link_to 'Create New Job', new_job_path %>
 <table>
   <thead>
     <tr>
@@ -36,4 +36,5 @@
   </td>
   <% end %>
   <td><%= link_to 'Create Ship', new_ship_path %></td>
+</div>
 </div>
