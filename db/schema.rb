@@ -44,16 +44,7 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.index ["ship_id"], name: "index_jobs_on_ship_id"
   end
 
-  create_table "ship_jobs", force: :cascade do |t|
-    t.integer "job_id"
-    t.integer "ship_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["job_id"], name: "index_ship_jobs_on_job_id"
-    t.index ["ship_id"], name: "index_ship_jobs_on_ship_id"
-    t.index ["user_id"], name: "index_ship_jobs_on_user_id"
-  end
+
 
   create_table "ships", force: :cascade do |t|
     t.string "name"
