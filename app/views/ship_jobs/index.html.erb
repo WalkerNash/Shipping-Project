@@ -1,6 +1,8 @@
-<h1>ShipJobs#index</h1>
-<p>Find me in app/views/ship_jobs/index.html.erb</p>
+<h1>Your Ships</h1>
 
 <% current_user.ships.each do |ship| %>
-<%= ship.name %>
+  <li><a href='/ships/<%=ship.id %>'><%= ship.name %></a></li>
 <%end%>
+
+
+<%= link_to 'Create New Ship', new_ship_path %>

@@ -1,4 +1,23 @@
+<div class="container">
 
 
-<h1>Ships#show</h1>
-<p>Find me in app/views/ships/show.html.erb</p>
+  <div class="shipNfo">
+    <h3>Name</h3> <p><%= @ship.name %></p>
+  </div>
+
+  <div class="shipNfo">
+    <h3># of Containers</h3> <p>$<%= @ship.containers %></p>
+  </div>
+
+  <div class="shipNfo">
+    <h3>Location</h3> <p><%= @ship.location %></p>
+  </div>
+
+  <div class="shipPic">
+    <%= image_tag @ship.shippic.url(:thumb) %>
+  </div>
+
+
+
+
+</div>
