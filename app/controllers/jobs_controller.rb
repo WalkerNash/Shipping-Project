@@ -32,7 +32,7 @@ end
 # PATCH/PUT /comments/1.json
 def update
   @job = Job.find(params[:id])
-    if @job.update(ship_params)
+    if @job.update(job_params)
       redirect_to job_path(@job), notice: 'Comment was successfully updated.'
     else
       render 'edit'
