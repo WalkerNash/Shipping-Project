@@ -24,8 +24,9 @@
  /* ..LOOK BELOW..RS.*/
 
  /* .......... Jobs Page CSS ......... */
+ /* ..LOOK BELOW..RS.*/
 
- /* .......... Ships Page CSS ......... */
+  /* .......... Ships Page CSS ......... */
 
  /* .......... Profile Page CSS ......... */
 
@@ -140,3 +141,24 @@ a:hover {
 .SignUp1 {
   text-align: center;
 }
+
+/* .......... Jobs Page CSS ......... */
+
+
+.jobslist {
+  text-align: center;
+}
+
+.createnewjob {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 600px;
+  padding-left: 20px;
+  padding-right: 40px;
+  width: 430px;
+}
+
+/* .......... Ships Page CSS ......... */
