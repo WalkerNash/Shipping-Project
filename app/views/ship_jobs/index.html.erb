@@ -1,8 +1,9 @@
 <h1>Your Ships</h1>
 
-<% current_user.ships.each do |ship| %>
-  <li><a href='/ships/<%=ship.id %>'><%= ship.name %></a></li>
+<%current_user.job_id do |job_id|%>
+  <ul>
+    <li><%=job_id%></li>
+  </ul>
 <%end%>
-
 
 <%= link_to 'Create New Ship', new_ship_path %>
