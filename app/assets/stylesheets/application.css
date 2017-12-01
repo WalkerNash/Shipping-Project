@@ -138,7 +138,6 @@ a:hover {
 
 .SignUp {
   text-align: center;
-  /*font-family: monospace;*/
   border: 2px solid grey;
   border-radius: 40px;
   background-color: grey;
@@ -150,6 +149,20 @@ a:hover {
 
 .SignUp1 {
   text-align: center;
-  /*font-size: 40px;*/
-  /*font-weight: bolder;*/
+}
+
+.joblist {
+  text-align: center;
+}
+
+.createnewjob {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 550px;
+  padding-left: 50px;
+  padding-right: 100px;
+  width: 430px;
 }
