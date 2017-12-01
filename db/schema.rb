@@ -12,6 +12,13 @@
 
 ActiveRecord::Schema.define(version: 20171130211137) do
 
+  create_table "feature_toggles", force: :cascade do |t|
+    t.string "name"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "job_ships", force: :cascade do |t|
     t.integer "job_id"
     t.integer "ship_id"
@@ -54,6 +61,7 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.string "location"
     t.integer "job_id"
     t.integer "ship_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "shippic_file_name"
@@ -62,6 +70,7 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.datetime "shippic_updated_at"
     t.index ["job_id"], name: "index_ships_on_job_id"
     t.index ["ship_id"], name: "index_ships_on_ship_id"
+    t.index ["user_id"], name: "index_ships_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
