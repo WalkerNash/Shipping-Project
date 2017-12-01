@@ -121,7 +121,16 @@
   border: 3px solid grey;
   background-color: grey;
   border-radius: 25px;
-  
+  word-spacing: 15px;
 
+}
 
+a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5em;
+}
+
+a:hover {
+  color: blue;
 }
