@@ -10,12 +10,13 @@
 
   <body>
     <nav>
+      <div class="header">
       <%=link_to 'Home', root_path %>
       <%=link_to 'About', root_path %>
       <% if !user_signed_in? %>
-  	  	<%= link_to 'Sign in',  new_user_session_path %>
-  	  	<%= link_to 'Sign Up', new_user_registration_path %>
-  	  <% end %>
+  	  	<%= link_to 'SignIn',  new_user_session_path %>
+  	  	<%= link_to 'SignUp', new_user_registration_path %>
+      <% end %>
     	<% if user_signed_in? %>
         <%=link_to 'Jobs', jobs_path %>
   	    <%=link_to 'Ships', ships_path %>
@@ -23,6 +24,7 @@
   	  	<%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm: 'are you sure??'} %>
     	<% end %>
       <%=link_to 'Contact', root_path %>
+      </div>
     </nav>
     <p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
