@@ -1,8 +1,8 @@
 <h1>Your Ships</h1>
 
-<%current_user.job_id do |job_id|%>
+<%current_user.jobs do |job_id|%>
   <ul>
-    <li><%=job_id%></li>
+    <li><%=job_id.name%></li>
   </ul>
 <%end%>
 
