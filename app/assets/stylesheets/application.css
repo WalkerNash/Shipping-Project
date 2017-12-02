@@ -29,6 +29,7 @@
   /* .......... Ships Page CSS ......... */
 
  /* .......... Profile Page CSS ......... */
+ /* ..LOOK BELOW..RS.*/
 
  /* .......... Jobs Page CSS ......... */
 
@@ -192,4 +193,21 @@ a:hover {
 
 .YourShips {
   text-align: center;
+}
+
+/* .......... Forgot Your Password Page CSS ......... */
+
+
+.ForgotPassword {
+  text-align: center;
+}
+
+.Email {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 600px;
+  width: 430px;
 }
