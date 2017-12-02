@@ -1,8 +1,8 @@
 <h1>Your Ships</h1>
 
-<%current_user.jobs do |job_id|%>
+<% @ships.each do |ship_id| %>
   <ul>
-    <li><%=job_id.name%></li>
+    <li><a href='/ships/<%=ship_id.id %>'><%=ship_id.name%></li>
   </ul>
 <%end%>
 

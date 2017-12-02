@@ -1,6 +1,7 @@
 class ShipJobsController < ApplicationController
   before_action :authenticate_user!
   def index
+    @ships = current_user.ships
   end
 
   def show
