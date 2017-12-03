@@ -141,7 +141,23 @@ a:hover {
 
 .SignUp1 {
   text-align: center;
+
 }
+
+.joblist {
+  text-align: center;
+}
+
+.createnewjob {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 550px;
+  padding-left: 50px;
+  padding-right: 100px;
+  width: 430px;}
 
 /* .......... Jobs Page CSS ......... */
 
