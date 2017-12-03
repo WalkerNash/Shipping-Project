@@ -49,6 +49,6 @@ end
   private
   # Never trust parameters from the scary internet, only allow the white list through.
   def comment_params
-    params.require(:ship).permit(:name, :containers, :location, :job_id, :shippic)
+    params.require(:ship).permit(:name, :containers, :location, :user_id)
   end
 end
