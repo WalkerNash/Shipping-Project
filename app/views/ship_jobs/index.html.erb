@@ -1,4 +1,4 @@
-<h1>Your Ships</h1>
+<h1 class="YourShips">Your Ships</h1>
 
 <% @ships.each do |ship_id| %>
   <ul>
@@ -6,4 +6,7 @@
   </ul>
 <%end%>
 
+
+<div class="CreateNewShip">
 <%= link_to 'Create New Ship', new_ship_path %>
+</div>
