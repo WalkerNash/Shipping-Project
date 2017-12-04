@@ -29,6 +29,7 @@
   /* .......... Ships Page CSS ......... */
 
  /* .......... Profile Page CSS ......... */
+ /* ..LOOK BELOW..RS.*/
 
  /* .......... Jobs Page CSS ......... */
 
@@ -165,6 +166,10 @@ a:hover {
   text-align: center;
 }
 
+.newjob {
+  margin-right: 300px;
+}
+
 .createnewjob {
   text-align: center;
   border: 2px solid grey;
@@ -178,3 +183,51 @@ a:hover {
 }
 
 /* .......... Ships Page CSS ......... */
+
+.CreateANewShipHere {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 600px;
+  width: 430px;
+}
+
+.CreateShipHere {
+  text-align: center;
+}
+
+/* .......... Profile Page CSS ......... */
+
+
+.CreateNewShip {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 600px;
+  width: 430px;
+}
+
+.YourShips {
+  text-align: center;
+}
+
+/* .......... Forgot Your Password Page CSS ......... */
+
+
+.ForgotPassword {
+  text-align: center;
+}
+
+.Email {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  background-color: grey;
+  opacity: 0.7;
+  margin-left: 600px;
+  width: 430px;
+}
