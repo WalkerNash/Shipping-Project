@@ -1,15 +1,12 @@
-
-<h1 class="joblist">Jobs List</h1>
-
 <div class="createnewjob">
+<h1 class="joblist">Jobs List</h1>
 <%= link_to 'Create New Job', new_job_path %>
 
-<div class="createnewjob">
-  <%= link_to 'Create New Job', new_job_path %>
+
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th>Jobs</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,7 +20,8 @@
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <%= form_with(model: @ship, local: true) do |f| %>
         <td>
-          <%= f.collection_select :ship_id, Ship.order(:name),:id,:name, include_blank: true %>
+          <%= f.collection_select :ship_id, Ship.order(:name),:id,:name, include_blank: true, prompt: 'Select Job'%>
+
         </td>
           <td><%= link_to 'Create Ship', new_ship_path %></td>
         <% end %>
