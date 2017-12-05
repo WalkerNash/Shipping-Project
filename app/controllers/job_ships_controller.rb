@@ -29,7 +29,7 @@ class JobShipsController < ApplicationController
       if @job_ship.save
         redirect_to @job_ship, notice: 'Job ship was successfully created.'
       else
-        render 'new' 
+        render 'new'
       end
     end
   end
@@ -56,4 +56,3 @@ class JobShipsController < ApplicationController
     def job_ship_params
       params.require(:ship).permit(:ship_id, :job_id, :user_id)
     end
-end
