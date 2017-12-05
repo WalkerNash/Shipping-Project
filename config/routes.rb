@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :job_ships
-resources :jobs_ships
-resources :ships
-resources :jobs
+  resources :ships
+  resources :jobs do
+    resources :job_ships
+  end
 # resources :users
 
   devise_for :users

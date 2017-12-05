@@ -27,4 +27,18 @@
 <div class="jobField">
 <h3>Containers</h3> <p><%= @job.containers %></p>
 </div>
+
+<div>
+  <h3>Select Ship</h3>
+  <%= form_with(model: @job_ship, local: true) do |f| %>
+  <%= hidden_field_tag 'job_id', @job.id %>
+  <td>
+    <%= f.collection_select :ship_id, Ship.order(:name),:id,:name, include_blank: true %>
+  </td>
+  <%= f.submit "Add Ship" %>
+  <% end %>
+  <td><%= link_to 'Create Ship', new_ship_path %></td>
+</div>
+</div>
+
 </div>

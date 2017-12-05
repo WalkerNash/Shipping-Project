@@ -3,7 +3,9 @@ before_action :authenticate_user!
 
   def index
     @jobs = Job.all
-    @ships = Ship.all
+    # @ships = Ship.all
+    @job_ship = JobShip.new
+
   end
 
   def show
@@ -31,7 +33,7 @@ end
 # PATCH/PUT /comments/1
 # PATCH/PUT /comments/1.json
 def update
-  @job = Job.find(params[:id])
+  @job = Job.find(params[:id]) 
     if @job.update(job_params)
       redirect_to job_path(@job), notice: 'Comment was successfully updated.'
     else
@@ -44,12 +46,12 @@ end
 def destroy
   @job = Job.find(params[:id])
   @job.destroy
- redirect_to root_path, notice: 'Comment was successfully destroyed.'
+  redirect_to root_path, notice: 'Comment was successfully destroyed.'
 end
 
   private
   # Never trust parameters from the scary internet, only allow the white list through.
   def job_params
-    params.require(:job).permit(:description, :origin, :destination, :cost, :containers, :ship_id)
+    params.require(:job).permit(:description, :origin, :destination, :cost, :containers)
   end
 end
