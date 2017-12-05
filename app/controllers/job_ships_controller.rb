@@ -26,14 +26,10 @@ class JobShipsController < ApplicationController
   # POST /job_ships.json
   def create
     @job_ship = JobShip.new(job_ship_params)
-
-    respond_to do |format|
       if @job_ship.save
-        format.html { redirect_to @job_ship, notice: 'Job ship was successfully created.' }
-        format.json { render :show, status: :created, location: @job_ship }
+        redirect_to @job_ship, notice: 'Job ship was successfully created.'
       else
-        format.html { render :new }
-        format.json { render json: @job_ship.errors, status: :unprocessable_entity }
+        render 'new' 
       end
     end
   end
@@ -41,25 +37,18 @@ class JobShipsController < ApplicationController
   # PATCH/PUT /job_ships/1
   # PATCH/PUT /job_ships/1.json
   def update
-    respond_to do |format|
       if @job_ship.update(job_ship_params)
-        format.html { redirect_to @job_ship, notice: 'Job ship was successfully updated.' }
-        format.json { render :show, status: :ok, location: @job_ship }
+        redirect_to @job_ship, notice: 'Job ship was successfully updated.'
       else
-        format.html { render :edit }
-        format.json { render json: @job_ship.errors, status: :unprocessable_entity }
+        render 'edit'
       end
-    end
   end
 
   # DELETE /job_ships/1
   # DELETE /job_ships/1.json
   def destroy
     @job_ship.destroy
-    respond_to do |format|
-      format.html { redirect_to job_ships_url, notice: 'Job ship was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to job_ships_url, notice: 'Job ship was successfully destroyed.'
   end
 
   private
