@@ -17,38 +17,38 @@ class ShipsController < ApplicationController
     @ship = Ship.find(params[:id])
   end
 
-  # POST /comments
-# POST /comments.json
+  # POST /ships
+# POST /ships.json
 def create
-  @ship = current_user.ships.new(comment_params)
+  @ship = current_user.ships.new(ship_params)
     if @ship.save
-      redirect_to ship_path(@ship), notice: 'Comment was successfully created.'
+      redirect_to ship_path(@ship), notice: 'ship was successfully created.'
     else
       render 'new'
     end
 end
-# PATCH/PUT /comments/1
-# PATCH/PUT /comments/1.json
+# PATCH/PUT /ships/1
+# PATCH/PUT /ships/1.json
 def update
   @ship = Ship.find(params[:id])
     if @ship.update(ship_params)
-      redirect_to ship_path(@ship), notice: 'Comment was successfully updated.'
+      redirect_to ship_path(@ship), notice: 'ship was successfully updated.'
     else
       render 'edit'
     end
 end
 
-# DELETE /comments/1
-# DELETE /comments/1.json
+# DELETE /ships/1
+# DELETE /ships/1.json
 def destroy
   @ship = Ship.find(params[:id])
   @ship.destroy
- redirect_to root_path, notice: 'Comment was successfully destroyed.'
+ redirect_to root_path, notice: 'ship was successfully destroyed.'
 end
 
   private
   # Never trust parameters from the scary internet, only allow the white list through.
-  def comment_params
-    params.require(:ship).permit(:name, :containers, :location, :user_id)
+  def ship_params
+    params.require(:ship).permit(:name, :containers, :location, :user_id, :shippic)
   end
 end

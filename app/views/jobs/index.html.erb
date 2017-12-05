@@ -15,16 +15,16 @@
     <% @jobs.each do |job| %>
       <tr>
         <td><%= link_to job.title, job %></td>
-        <td><%= link_to 'Add',  %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <%= form_with(model: @ship, local: true) do |f| %>
         <td>
           <%= f.collection_select :ship_id, Ship.order(:name),:id,:name, include_blank: true, prompt: 'Select Job'%>
-
+        <td><%= f.submit 'Add'  %></td>
+        <% end %>
         </td>
           <td><%= link_to 'Create Ship', new_ship_path %></td>
-        <% end %>
+        
       </tr>
       <% end %>
   </tbody>

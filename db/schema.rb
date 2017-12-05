@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171130211137) do
+ActiveRecord::Schema.define(version: 20171205154323) do
 
   create_table "job_ships", force: :cascade do |t|
     t.integer "job_id"
@@ -35,17 +35,6 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.string "name"
   end
 
-  create_table "ship_jobs", force: :cascade do |t|
-    t.integer "job_id"
-    t.integer "ship_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["job_id"], name: "index_ship_jobs_on_job_id"
-    t.index ["ship_id"], name: "index_ship_jobs_on_ship_id"
-    t.index ["user_id"], name: "index_ship_jobs_on_user_id"
-  end
-
   create_table "ships", force: :cascade do |t|
     t.string "name"
     t.integer "containers"
@@ -53,6 +42,10 @@ ActiveRecord::Schema.define(version: 20171130211137) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "shippic_file_name"
+    t.string "shippic_content_type"
+    t.integer "shippic_file_size"
+    t.datetime "shippic_updated_at"
     t.index ["user_id"], name: "index_ships_on_user_id"
   end
 
