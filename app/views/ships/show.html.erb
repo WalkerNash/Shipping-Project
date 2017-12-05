@@ -17,7 +17,9 @@
     <%= image_tag @ship.shippic.url(:thumb) %>
   </div>
 
-
+<%= form_with(model: @job, local: true) do |f| %>
+<%= f.collection_select :job_id, Job.order(:name), :id, :title, include_blank: true %>
+<% end %>
 
 
 </div>
