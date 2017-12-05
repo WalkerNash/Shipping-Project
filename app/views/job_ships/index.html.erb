@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Job Ships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @job_ships.each do |job_ship| %>
+      <tr>
+        <td><%= link_to 'Show', job_ship %></td>
+        <td><%= link_to 'Edit', edit_job_ship_path(job_ship) %></td>
+        <td><%= link_to 'Destroy', job_ship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job Ship', new_job_ship_path %>

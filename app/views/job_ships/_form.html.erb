@@ -1,0 +1,17 @@
+<%= form_with(model: job_ship, local: true) do |form| %>
+  <% if job_ship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(job_ship.errors.count, "error") %> prohibited this job_ship from being saved:</h2>
+
+      <ul>
+      <% job_ship.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

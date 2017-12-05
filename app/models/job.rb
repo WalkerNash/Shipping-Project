@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-  has_many :job_ships
+  has_many :jobShips
 	has_many :ships, through: :user
   # validates :name, uniqueness: true
   # validates_numericality_of :cost, greater_than: 999.99

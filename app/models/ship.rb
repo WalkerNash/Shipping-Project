@@ -1,5 +1,5 @@
 class Ship < ApplicationRecord
-  has_many :job_ships
+  has_many :jobShips
 	has_many :jobs, through: :job_ships
   belongs_to :user
   # validates :name, uniqueness: true

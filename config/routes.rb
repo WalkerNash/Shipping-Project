@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :job_ships
 resources :jobs_ships
 resources :ships
 resources :jobs

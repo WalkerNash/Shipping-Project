@@ -1,3 +1,0 @@
-class ShipJob < ApplicationRecord
-
-end
