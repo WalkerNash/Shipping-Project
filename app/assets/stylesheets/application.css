@@ -126,7 +126,9 @@ h1{
   border-radius: 40px;
   background-color: grey;
   opacity: 0.7;
-  margin-left: 600px;
+  margin-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   width: 430px;
 }
 
