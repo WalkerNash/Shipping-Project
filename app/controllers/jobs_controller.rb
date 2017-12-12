@@ -12,6 +12,7 @@ before_action :authenticate_user!
 
   def new
     @job = Job.new
+    @ships = Ship.all
   end
 
   def edit
