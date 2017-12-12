@@ -1,4 +1,5 @@
 class ShipsController < ApplicationController
+
   before_action :authenticate_user!
 
   def index
@@ -7,6 +8,7 @@ class ShipsController < ApplicationController
 
   def show
     @ship = Ship.find(params[:id])
+    @jobs = Job.all
   end
 
   def new
@@ -15,6 +17,7 @@ class ShipsController < ApplicationController
 
   def edit
     @ship = Ship.find(params[:id])
+    @jobs = Job.all
   end
 
   # POST /ships
@@ -49,6 +52,6 @@ end
   private
   # Never trust parameters from the scary internet, only allow the white list through.
   def ship_params
-    params.require(:ship).permit(:name, :containers, :location, :user_id, :shippic)
+    params.require(:ship).permit(:name, :containers, :location, :user_id, :shippic, :job_ids, job_ids: [])
   end
 end
