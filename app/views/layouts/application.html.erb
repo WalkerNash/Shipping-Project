@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,7 +20,7 @@
     	<% if user_signed_in? %>
         <%=link_to 'Jobs', jobs_path %>
   	    <%=link_to 'Ships', ships_path %>
-		    <%= link_to "Profile", user_path(current_user.id) %>
+		    <%= link_to "Profile", job_ships_path %>
   	  	<%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm: 'are you sure??'} %>
     	<% end %>
       <%=link_to 'Contact', root_path %>

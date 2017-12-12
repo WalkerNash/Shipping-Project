@@ -1,6 +1,6 @@
 <h1>Your Ships</h1>
 
-<% current_user.ships do |x|%>
+<% current_user.ships.each do |x|%>
   <ul>
     <li><%= x.name %></li>
   </ul>
