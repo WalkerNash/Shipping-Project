@@ -3,9 +3,10 @@ Rails.application.routes.draw do
 resources :jobs_ships
 resources :ships
 resources :jobs
+resources :users
 # resources :users
 
-  devise_for :users
+  devise_for :users, :controllers => { users: 'users'}
 
   get 'welcome/index'
 	root to: 'welcome#index'
