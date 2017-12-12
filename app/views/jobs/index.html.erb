@@ -22,14 +22,5 @@
   </tbody>
 </table>
 
-<div>
-  <h3>Select Ship</h3>
-  <%= form_with(model: @jobs_ship, local: true) do |f| %>
-  <td>
-    <%= f.collection_select :ship_id, Ship.order(:name),:id,:name, include_blank: true %>
-  </td>
-  <%= f.submit %>
-  <% end %>
-  <td><%= link_to 'Create Ship', new_ship_path %></td>
-</div>
+
 </div>

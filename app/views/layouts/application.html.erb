@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Project</title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -11,32 +13,23 @@
   <body>
     <nav>
       <div class="header">
-        <span class="float_l"><%=link_to 'Home', root_path %></span>
-        <%=link_to 'About', root_path %>
-        <% if !user_signed_in? %>
-        <%= link_to 'SignIn',  new_user_session_path %>
-        <%= link_to 'SignUp', new_user_registration_path %>
-        <% end %>
-        <% if user_signed_in? %>
+      <%=link_to 'Home', root_path %>
+      <%=link_to 'About', root_path %>
+      <% if !user_signed_in? %>
+  	  	<%= link_to 'SignIn',  new_user_session_path %>
+  	  	<%= link_to 'SignUp', new_user_registration_path %>
+      <% end %>
+    	<% if user_signed_in? %>
         <%=link_to 'Jobs', jobs_path %>
-<<<<<<< HEAD
   	    <%=link_to 'Ships', ships_path %>
 		    <%= link_to "Profile", user_path(current_user.id) %>
   	  	<%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm: 'are you sure??'} %>
     	<% end %>
       <%=link_to 'Contact', root_path %>
-=======
-        <%=link_to 'Ships', ships_path %>
-        <%= link_to 'Profile', job_ships_path %>
-        <%= link_to 'Log out', destroy_user_session_path, method: :delete, data: {confirm: 'are you sure??'} %>
-        <% end %>
-        <span class="pad_r"><%=link_to 'Contact', root_path %></span>
->>>>>>> c51f1bf1f57d8599455872270d2385fa652cb559
       </div>
     </nav>
-
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+		<p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
