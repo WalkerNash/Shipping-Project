@@ -37,15 +37,30 @@
 
 
 
-  body {
-    color: white;
-    font-family: monospace;
+body {
+    font-family: "Spectral SC", serif;
     font-size: 25px;
     background-image: url('ship.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+p{
+ color: #A9A9A9;
+}
+
+h1{
+  color: #090909;
+}
+
+.pad_r{
+  padding-right: 60px;
+}
+
+.float_l{
+  float: left;
+  padding-left: 60px;
+}
   .title {
     text-align: center;
 }
@@ -71,19 +86,28 @@
     height: 190px;
     width: 30%;
     float: left;
-    display: flex;
+    display: block;
     border-radius: 25px;
     padding-top: 80px;
-    margin-top: 500px;
+    margin-top: 135px;
     margin-left: 30px;
+    text-align: center;
 }
 
-  .p {
-    padding-top: 50px;
-    color: white;
-    background-color: grey;
-    border-radius: 25px;
+.container > h2{
+  color: black;
+  font-size: 30px;
+}
+
+
+.box {
+    padding-top: 20px;
+    padding-left: 3px;
+    background-color: rgba(80,80,80,0.6);
+    border-radius: 7px;
     text-indent: 2em;
+    text-align: left;
+
 }
 
   .h2 {
@@ -102,19 +126,21 @@
   border-radius: 40px;
   background-color: grey;
   opacity: 0.7;
-  margin-left: 600px;
+  margin-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   width: 430px;
 }
 
 /* .......... HEADER ......... */
 
 .header {
-  color: white;
-  text-align: center;
-  border: 3px solid grey;
-  background-color: grey;
-  border-radius: 25px;
-  word-spacing: 15px;
+  color: black;
+  text-align: right;
+  background-color: black;
+  word-spacing: 20px;
+  width: 100%;
+  padding-top: 0;
 }
 
 a {
@@ -135,7 +161,8 @@ a:hover {
   border-radius: 40px;
   background-color: grey;
   opacity: 0.7;
-  margin-left: 600px;
+  margin-left: 30px;
+  padding-top: 20px;
   width: 430px;
 }
 
@@ -228,6 +255,7 @@ a:hover {
   border-radius: 40px;
   background-color: grey;
   opacity: 0.7;
-  margin-left: 600px;
+  margin-left: 30px;
+  padding-top: 20px;
   width: 430px;
 }
