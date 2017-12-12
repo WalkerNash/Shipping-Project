@@ -1,0 +1,12 @@
+<h1>Your Ships</h1>
+
+<%= @user.email %>
+<%= "Hello" %>
+<div style="border:5px solid red; width: 20%; height:100px">
+<% @user.ships.each do |ship|%>
+  <%= ship.name %>
+
+<% end %>
+</div>
+
+<%= link_to 'Create New Ship', new_ship_path %>
