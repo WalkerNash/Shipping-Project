@@ -4,6 +4,7 @@ class JobShipsController < ApplicationController
   # GET /job_ships.json
   def index
     @job_ships = JobShip.all
+    @user = current_user
   end
 
   # GET /job_ships/1
