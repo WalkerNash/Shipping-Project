@@ -1,0 +1,6 @@
+<div class="jobBox">
+  <p>Assign a job to this ship:</p>
+  <%= form_for @ship do |form| %>
+    <%= collection_check_boxes( :ship, :job_ids, @jobs, :id , :title )%>
+    <%= form.submit %>
+    <% end %>
