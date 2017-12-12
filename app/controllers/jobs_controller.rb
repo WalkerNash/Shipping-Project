@@ -16,6 +16,7 @@ before_action :authenticate_user!
 
   def edit
     @job = Job.find(params[:id])
+    @ships = Ship.all
   end
 
   # POST /comments
@@ -50,6 +51,6 @@ end
   private
   # Never trust parameters from the scary internet, only allow the white list through.
   def job_params
-    params.require(:job).permit(:description, :origin, :destination, :cost, :containers, :ship_id)
+    params.require(:job).permit(:description, :origin, :destination, :cost, :containers, :ship_id, :title, :ship_ids, ship_ids: [])
   end
 end
