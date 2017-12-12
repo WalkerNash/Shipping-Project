@@ -15,7 +15,7 @@
     <%= form.label :title %>
     <%= form.text_field :title, id: :job_title %>
   </div>
-  
+
   <div class="field">
     <%= form.label :description %>
     <%= form.text_field :description, id: :job_description %>
@@ -40,6 +40,14 @@
     <%= form.label :containers %>
     <%= form.text_field :containers, id: :job_containers %>
   </div>
+
+  <div class="field">
+    <p>Assign a ship to this job:</p>
+    <%= form_for @job do |form| %>
+      <%= collection_check_boxes( :job, :ship_ids, @ships, :id , :name )%>
+      <% end %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
